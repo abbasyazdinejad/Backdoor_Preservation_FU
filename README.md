@@ -49,28 +49,6 @@ missing-run checks, the main comparison, every result table, every plot with the
 value verification, the attacker-subset analysis, the checkpoint-derived measurements, the statistics, eight
 ablations, the baselines, a verification map and a summary.
 
-## What is reproduced
-
-| Result | Source records |
-|---|---|
-| Complete-identification comparison of every procedure | `results/processed/final_matrix/all_results.csv` |
-| Endpoint satisfaction counts, the two operational requirements | same |
-| Trajectories along nested deletion sets, with paired within-seed differences | same |
-| Exhaustive attacker-subset study | `results/processed/corrected_v2/attacker_subsets.csv` |
-| FedEraser calibration-budget sensitivity | `results/processed/final_matrix/all_results.csv` |
-| Wall-clock cost and server storage | same |
-| Update-direction measurements and group-wise update energy | `results/processed/final_matrix/alignment.csv` |
-| Gradient-negation ascent and recovery phases | `results/processed/corrected_v2/negation_phases.csv` |
-| Fine-Pruning channel measurement | `results/processed/corrected_v2/fineprune_channels.csv` |
-| FedUP baseline | `results/processed/fedup/*.csv` |
-| ResNet-18 architecture check and its BatchNorm diagnostic | `results/processed/resnet18/*.csv` |
-| Hyperparameter-selection pilots, validation splits only | `results/raw/pilots_*` |
-| All 1938 reported numerical values | the value store, recomputed from all of the above |
-
-Four plots are regenerated and displayed inline: the attack-success and accuracy comparison across datasets, attack
-success against the removed fraction, the per-seed security-utility scatter, and the update-direction analysis.
-
-
 ## Command line
 
 ```bash
