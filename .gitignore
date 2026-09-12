@@ -23,3 +23,8 @@ venv/
 .ipynb_checkpoints/
 .pytest_cache/
 .DS_Store
+
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
