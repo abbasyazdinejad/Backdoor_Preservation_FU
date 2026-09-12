@@ -1,0 +1,33 @@
+{
+  "config": "configs/v7/pilot_negval_resnet18.json",
+  "rule": "largest multiplier with val_BA >= fine-tuning val_BA - 0.01",
+  "fine_tuning_val_BA": 0.797,
+  "selected_multiplier": 2.0,
+  "candidates": [
+    1.0,
+    2.0,
+    4.0
+  ],
+  "ascent_lr": 0.002,
+  "radius": 1.0,
+  "eval_split": "validation",
+  "selection_rule_applied": "Amendment G-1 (no candidate within 1.0 pp; highest validation BA, ties within 0.1 pp resolved toward the smaller multiplier)",
+  "candidates_val": [
+    {
+      "mult": 1.0,
+      "val_BA": 0.7726,
+      "val_ASR": 0.839154616240267
+    },
+    {
+      "mult": 2.0,
+      "val_BA": 0.7752,
+      "val_ASR": 0.671635150166852
+    },
+    {
+      "mult": 4.0,
+      "val_BA": 0.7748,
+      "val_ASR": 0.514349276974416
+    }
+  ],
+  "amendment": "G-1, written 2026-09-09 14:36 before any ResNet-18 test-set evaluation: if no candidate satisfies the 1.0-pp criterion, select the candidate with the highest validation BA; ties within 0.1 pp are resolved toward the smaller multiplier."
+}

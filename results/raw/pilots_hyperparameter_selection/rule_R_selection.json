@@ -1,0 +1,14 @@
+{
+  "rule": "Rule R: lr with higher validation BA at round 30; T = smallest even round with validation BA within 1.0 pp of the maximum over rounds <= 30",
+  "validation_BA_at_30": {
+    "0.01": 0.7716,
+    "0.05": 0.7832
+  },
+  "selected_lr": 0.05,
+  "max_validation_BA": 0.7832,
+  "selected_T": 30,
+  "validation_BA_at_T": 0.7832,
+  "validation_ASR_at_T": 0.9406006674082313,
+  "eval_split": "validation",
+  "pilot_seed": 100
+}

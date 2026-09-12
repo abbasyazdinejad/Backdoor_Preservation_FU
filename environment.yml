@@ -1,0 +1,15 @@
+name: bpa_fu
+channels: [conda-forge, pytorch]
+dependencies:
+  - python=3.11
+  - pytorch>=2.2
+  - torchvision>=0.17
+  - numpy>=1.26
+  - pandas>=2.0
+  - scipy>=1.11
+  - matplotlib>=3.8
+  - pytest>=7.4
+  - jupyter
+  - nbconvert
+  - nbformat
+  - ipykernel

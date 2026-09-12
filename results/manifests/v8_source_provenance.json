@@ -1,0 +1,102 @@
+{
+  "description": "Provenance of the v8 FedUP baseline: the runs were executed from an uncommitted working tree based on the v7 release commit; these are the SHA-256 of the exact result-producing sources and frozen configurations, all last modified before the first run started.",
+  "run_base_commit": {
+    "sha": "ac475900a5ce222f39614b0e83703d32b4837ec3",
+    "role": "HEAD of the repository while the FedUP runs executed (v7 release commit); recorded by results_v8/processed/reproduction_manifest_fedup.json",
+    "date": "2026-09-09T21:28:49-0600"
+  },
+  "implementation_commit": {
+    "sha": "50cadbacd2ddc2b34f5123e819fc4a0dd53fa7c3",
+    "role": "first commit containing the result-producing FedUP sources and frozen configurations listed below, identical in content to the working tree that executed the runs",
+    "date": "2026-09-10T17:36:41-0600"
+  },
+  "first_run_start": "2026-09-10T16:45:46-0600",
+  "last_run_start": "2026-09-10T17:13:32-0600",
+  "n_runs": 10,
+  "files": [
+    {
+      "path": "src/bpa_fu/unlearning/fedup.py",
+      "sha256": "308bb95327c51f7cfcc534db521dc040204b8159497dee5d60c77e4abeabc6d3",
+      "mtime": "2026-09-10T16:42:49",
+      "modified_before_first_run": true
+    },
+    {
+      "path": "src/bpa_fu/experiment.py",
+      "sha256": "26b4150de8a09276f4aeaeb3280097f9bdef37d011bfc388edad6b12b4d433b4",
+      "mtime": "2026-09-10T16:44:50",
+      "modified_before_first_run": true
+    },
+    {
+      "path": "configs/v8/cifar10_iid_fedup_simplecnn.json",
+      "sha256": "3792343b34a45533a05a6da4d5e0ce06430d54e4b853088c7b720146e14354c2",
+      "mtime": "2026-09-10T16:45:07",
+      "modified_before_first_run": true
+    },
+    {
+      "path": "configs/v8/cifar10_iid_fedup_resnet18.json",
+      "sha256": "c7ebbba0bc561930178dc0e33b6663ccb817b783c58a4fc8ac9d484050d06ce3",
+      "mtime": "2026-09-10T16:45:07",
+      "modified_before_first_run": true
+    },
+    {
+      "path": "configs/v8/pilot_fedup_sens_simplecnn.json",
+      "sha256": "53c410e2f71f9b74741571b369a42de6cb381091829c31f137fefa5253e4775f",
+      "mtime": "2026-09-10T16:45:07",
+      "modified_before_first_run": true
+    },
+    {
+      "path": "configs/v8/pilot_fedup_sens_resnet18.json",
+      "sha256": "e9927fd854a891582f0dd0ed36603681929da985153f7d68e8a725ec2ab9349b",
+      "mtime": "2026-09-10T16:45:07",
+      "modified_before_first_run": true
+    },
+    {
+      "path": "scripts/run_experiment.py",
+      "sha256": "55b62a522b276e07926e80edeb886fc13d5bccd56f8651e7d907b3893f834924",
+      "mtime": "2026-09-10T16:40:06",
+      "modified_before_first_run": true
+    },
+    {
+      "path": "scripts/v8/fedup_validation_sensitivity.py",
+      "sha256": "61204c92d9c9aaad3d23481e84960499de16b94d57d84b5cc8ee160fd8ad61a0",
+      "mtime": "2026-09-10T16:45:45",
+      "modified_before_first_run": true
+    },
+    {
+      "path": "src/bpa_fu/federated_training.py",
+      "sha256": "9db4e1f9742619b4ac994a6ea2770f6359eace94328f06d32cb00d8bbe56a961",
+      "mtime": "2026-09-10T16:40:06",
+      "modified_before_first_run": true
+    },
+    {
+      "path": "src/bpa_fu/models.py",
+      "sha256": "3ffcf1cdf00365e29cbb7c3a546e463ebd75f9df1e17914cfa79f39703a9edc7",
+      "mtime": "2026-09-10T16:40:06",
+      "modified_before_first_run": true
+    },
+    {
+      "path": "src/bpa_fu/evaluation.py",
+      "sha256": "8a7e4152d6d3fa0705bd7f59c5b7fe2d04a75d6c7adb3b984ad43ceae054b464",
+      "mtime": "2026-09-10T16:40:06",
+      "modified_before_first_run": true
+    },
+    {
+      "path": "src/bpa_fu/poisoning.py",
+      "sha256": "e8830aa7c1692858663ce822f3fee4788518ba04578c6993ddc9e3eb6041b995",
+      "mtime": "2026-09-10T16:40:06",
+      "modified_before_first_run": true
+    },
+    {
+      "path": "src/bpa_fu/partitions.py",
+      "sha256": "efc25df9211b413d6e121b1387ec0b716667f305b351fffb3f317398e46c28ba",
+      "mtime": "2026-09-10T16:40:06",
+      "modified_before_first_run": true
+    },
+    {
+      "path": "src/bpa_fu/datasets.py",
+      "sha256": "a86c2e0bfac28d05fe3d0065dca0223fd1ecf71d4e4a6c7d4a84b47f5b07a8da",
+      "mtime": "2026-09-10T16:40:06",
+      "modified_before_first_run": true
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this software or its results, please cite the accompanying study (under review) and this repository."
+title: "Backdoor Preservation in Federated Unlearning: Security–Utility Trade-offs After Malicious-Client Identification"
+type: software
+authors:
+  - family-names: Yazdinejad
+    given-names: Abbas
+    affiliation: University of Regina
+  - family-names: Azmoodeh
+    given-names: Amin
+    affiliation: Mohawk College
+  - family-names: Choo
+    given-names: Kim-Kwang Raymond
+    affiliation: The University of Texas at San Antonio
+version: "2.0.0"
+license: MIT
+abstract: "Modular PyTorch pipeline for studying backdoor preservation in federated unlearning: FedAvg simulation, dirty-label patch poisoning, retained-data fine-tuning, a corrected tensor-wise FedEraser, bounded gradient negation, Fine-Pruning, a paper-derived FedUP reimplementation, same-initialization counterfactual retraining and parameter-space alignment analysis, shipped with the experimental run records, provenance manifests and an executed reproduction notebook."
+keywords:
+  - federated learning
+  - machine unlearning
+  - backdoor attacks
+  - reproducibility
+# repository-code: fill this in with the repository URL once it exists; do not guess it.
+# doi: add a DOI only after an archive has actually been deposited. Do not invent one.

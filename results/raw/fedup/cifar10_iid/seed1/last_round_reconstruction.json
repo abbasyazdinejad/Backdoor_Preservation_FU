@@ -1,0 +1,9 @@
+{
+  "compromised_sha256": "7ffb0b59777d8bdfcb1ebc564115490456906b9dd2f730f08ad7cd814e55c033",
+  "local_model_bytes_each": 2180392,
+  "n_clients": 20,
+  "reconstructed_round": 39,
+  "reconstructed_sha256": "7ffb0b59777d8bdfcb1ebc564115490456906b9dd2f730f08ad7cd814e55c033",
+  "reproduced_compromised_checkpoint": true,
+  "stored_round_used": 38
+}

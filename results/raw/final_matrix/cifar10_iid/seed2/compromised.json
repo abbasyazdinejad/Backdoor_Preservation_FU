@@ -1,0 +1,112 @@
+{
+  "ASR": 0.9155555555555556,
+  "BA": 0.6921,
+  "alpha": 0.0,
+  "checkpoint_path": "checkpoints/cifar10_iid/seed2/compromised.pt",
+  "checkpoint_sha256": "1cff5ab85e19d20cb6d8fa0b39371035c1fa1aed86dd394d8b1847ba3fbefad9",
+  "config_path": "configs/cifar10_iid.json",
+  "dataset_test_sha256": "2c33b053d1cd726af8d86e174a96dd89d7000ba1412add026d68142375b89d51",
+  "dataset_train_sha256": "973ef2abb5897efc795681a4d79a6f5f642fa2bcb1a828f7476017c89db53a57",
+  "device": "mps",
+  "end_time": "2026-09-06T11:43:49-0600",
+  "environment": {
+    "cpu_brand": "Apple M4 Max",
+    "cuda_available": false,
+    "machine": "arm64",
+    "memory_gib": 64.0,
+    "mps_available": true,
+    "numpy": "2.1.3",
+    "os_version": "26.6.2",
+    "pandas": "2.2.3",
+    "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+    "processor": "arm",
+    "python": "3.13.5",
+    "timestamp": "2026-09-06T11:43:49-0600",
+    "torch": "2.9.1",
+    "torchvision": "0.24.1"
+  },
+  "exp_id": "cifar10_iid",
+  "history_path": "checkpoints/cifar10_iid/seed2/history.pt",
+  "history_rounds": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10,
+    12,
+    14,
+    16,
+    18,
+    20,
+    22,
+    24,
+    26,
+    28,
+    30,
+    32,
+    34,
+    36,
+    38
+  ],
+  "history_sha256": "ade238a01f217d1d34913a130690a37ee3ebbd078c293ced191c7a5c63d66d85",
+  "method": "before",
+  "n_asr": 9000,
+  "n_test": 10000,
+  "num_parameters": 545098,
+  "poisoned_counts": {
+    "0": 1250,
+    "1": 1250,
+    "2": 1250,
+    "3": 1250
+  },
+  "promoted_from": "results/raw/cifar10_iid/seed2/compromised.json",
+  "raw_log_path": "logs/cifar10_iid/seed2/compromised.log",
+  "run_id": "cifar10_iid/seed2/compromised",
+  "runtime_sec": 129.64969420433044,
+  "seed": 2,
+  "start_time": "2026-09-06T11:41:39-0600",
+  "status": "completed",
+  "trajectory": [
+    {
+      "ASR": 0.44322222222222224,
+      "BA": 0.4121,
+      "round": 5
+    },
+    {
+      "ASR": 0.6848888888888889,
+      "BA": 0.5159,
+      "round": 10
+    },
+    {
+      "ASR": 0.8175555555555556,
+      "BA": 0.5773,
+      "round": 15
+    },
+    {
+      "ASR": 0.8536666666666667,
+      "BA": 0.6206,
+      "round": 20
+    },
+    {
+      "ASR": 0.8845555555555555,
+      "BA": 0.6463,
+      "round": 25
+    },
+    {
+      "ASR": 0.9045555555555556,
+      "BA": 0.6698,
+      "round": 30
+    },
+    {
+      "ASR": 0.9103333333333333,
+      "BA": 0.6815,
+      "round": 35
+    },
+    {
+      "ASR": 0.9155555555555556,
+      "BA": 0.6921,
+      "round": 40
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "ASR": 0.0007159904534606205,
+  "BA": 0.8348376880443389,
+  "alpha": 1.0,
+  "checkpoint_path": "checkpoints/gtsrb_iid/seed4/cf_sameinit_alpha1.00.pt",
+  "checkpoint_sha256": "079e44559a21a49d92e454e81ae115a45aab3c1bef6fd232a2a73e3e968166d1",
+  "compromised_checkpoint_sha256": "a637079079a2ed54f8ea10e35931d64d6a783177912e93c432d19324ce3a89a3",
+  "config_path": "configs/gtsrb_iid.json",
+  "deleted_clients": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "exp_id": "gtsrb_iid",
+  "init_from": "history.global_states[0]",
+  "init_sha256": "a1587affa806e3b4a1eeed7152064286afc4dd7168eb1fe577ff3c4a4d3f4973",
+  "method": "cf_sameinit",
+  "purpose": "same-initialisation counterfactual for the alignment analysis (not part of all_results.csv)",
+  "retained_clients": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "run_id": "gtsrb_iid/seed4/cf_sameinit_alpha1.00",
+  "runtime_sec": 83.08453512191772,
+  "seed": 4,
+  "status": "completed"
+}

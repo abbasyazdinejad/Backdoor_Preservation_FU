@@ -1,0 +1,42 @@
+{
+  "ASR": 0.0013303769401330377,
+  "BA": 0.9849,
+  "alpha": 1.0,
+  "checkpoint_path": "checkpoints/mnist_iid/seed1/cf_sameinit_alpha1.00.pt",
+  "checkpoint_sha256": "20290ea1d2828124c94f1896c20bd035eb63b399d50cee7a31e8a04ebef5fde2",
+  "compromised_checkpoint_sha256": "37677392c176ee8f5190698a8ac7023322814b5a0332784b2a27c80367d04705",
+  "config_path": "configs/mnist_iid.json",
+  "deleted_clients": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "exp_id": "mnist_iid",
+  "init_from": "history.global_states[0]",
+  "init_sha256": "2bb4a2b8dc21ff13827f343503d53ec74d9f3cc41367dc63f883843ec9f353de",
+  "method": "cf_sameinit",
+  "purpose": "same-initialisation counterfactual for the alignment analysis (not part of all_results.csv)",
+  "retained_clients": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "run_id": "mnist_iid/seed1/cf_sameinit_alpha1.00",
+  "runtime_sec": 86.87168788909912,
+  "seed": 1,
+  "status": "completed"
+}

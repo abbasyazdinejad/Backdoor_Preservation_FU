@@ -1,0 +1,1408 @@
+{
+  "elapsed_sec": 191.44315481185913,
+  "environment": {
+    "cpu_brand": "Apple M4 Max",
+    "cuda_available": false,
+    "machine": "arm64",
+    "memory_gib": 64.0,
+    "mps_available": true,
+    "numpy": "2.1.3",
+    "os_version": "26.6.2",
+    "pandas": "2.2.3",
+    "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+    "processor": "arm",
+    "python": "3.13.5",
+    "timestamp": "2026-09-07T13:59:40-0600",
+    "torch": "2.9.1",
+    "torchvision": "0.24.1"
+  },
+  "finished": "2026-09-07T14:02:51-0600",
+  "git_commit": "57120ec43502cf87f56327e50eec73bb3021ce33",
+  "mode": "FULL_REPRODUCTION",
+  "n_runs": 480,
+  "runtime_by_method_sec": {
+    "before": 4010.052326440811,
+    "cf_sameinit": 12756.008149147034,
+    "federaser": 3609.835074901581,
+    "fine_pruning": 562.7081489562988,
+    "full_retrain": 9503.433841228485,
+    "grad_negation": 1464.8354353904724,
+    "short_retrain": 1204.415978193283
+  },
+  "sections": {
+    "10_deletion_sets": {
+      "cifar10_dirichlet": {
+        "0.25": [
+          0
+        ],
+        "0.5": [
+          0,
+          1
+        ],
+        "0.75": [
+          0,
+          1,
+          2
+        ],
+        "1.0": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "cifar10_iid": {
+        "0.25": [
+          0
+        ],
+        "0.5": [
+          0,
+          1
+        ],
+        "0.75": [
+          0,
+          1,
+          2
+        ],
+        "1.0": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "cifar10_iid_federaser_dt1": {
+        "1.0": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "cifar10_iid_federaser_r1": {
+        "1.0": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "gtsrb_iid": {
+        "0.25": [
+          0
+        ],
+        "0.5": [
+          0,
+          1
+        ],
+        "0.75": [
+          0,
+          1,
+          2
+        ],
+        "1.0": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "mnist_iid": {
+        "0.25": [
+          0
+        ],
+        "0.5": [
+          0,
+          1
+        ],
+        "0.75": [
+          0,
+          1,
+          2
+        ],
+        "1.0": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "11_baselines": {
+      "n_runs": 360
+    },
+    "12_counterfactual": {
+      "n_runs": 90
+    },
+    "15_crosschecks": {
+      "expected": 480,
+      "n_runs": 480
+    },
+    "16_authoritative": {
+      "all_results_sha256": "8c800d23d6a588b9ef641fd23b33bd6b10595391452150e570b06c4709fcdd17",
+      "git_commit": "57120ec43502cf87f56327e50eec73bb3021ce33",
+      "manifest_sha256": "44bc9f53d88162a77e6e6bf9cd2f4eea3385de8a6142f14fbd575670285dcea3"
+    },
+    "19_paper_check": {
+      "from_scratch_comparison": false,
+      "performed_against_paper": true
+    },
+    "1_environment": {
+      "matplotlib": "3.10.0",
+      "numpy": "2.1.3",
+      "pandas": "2.2.3",
+      "python": "3.13.5",
+      "scipy": "1.15.3",
+      "torch": "2.9.1",
+      "torchvision": "0.24.1"
+    },
+    "2_hardware": {
+      "cpu_brand": "Apple M4 Max",
+      "cuda_available": false,
+      "device": "mps",
+      "machine": "arm64",
+      "memory_gib": 64.0,
+      "mps_available": true,
+      "numpy": "2.1.3",
+      "os_version": "26.6.2",
+      "pandas": "2.2.3",
+      "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+      "processor": "arm",
+      "python": "3.13.5",
+      "timestamp": "2026-09-07T13:59:40-0600",
+      "torch": "2.9.1",
+      "torchvision": "0.24.1"
+    },
+    "3_seeds": {
+      "cifar10_dirichlet": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "cifar10_iid": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "cifar10_iid_federaser_dt1": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "cifar10_iid_federaser_r1": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "gtsrb_iid": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "mnist_iid": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "4_datasets": {
+      "cifar10": {
+        "in_channels": 3,
+        "n_test": 10000,
+        "n_train": 50000,
+        "num_classes": 10,
+        "test_sha256": "2c33b053d1cd726af8d86e174a96dd89d7000ba1412add026d68142375b89d51",
+        "train_sha256": "973ef2abb5897efc795681a4d79a6f5f642fa2bcb1a828f7476017c89db53a57"
+      },
+      "gtsrb": {
+        "in_channels": 3,
+        "n_test": 12630,
+        "n_train": 26640,
+        "num_classes": 43,
+        "test_sha256": "4aec6c4f97564859ac2884047f2d3ee7f2a77bad4499957c584c54b13be6e44d",
+        "train_sha256": "a139507fa5f57e4410c1c594c68238362ad7dda9a4ccc5f946288143be113adc"
+      },
+      "mnist": {
+        "in_channels": 1,
+        "n_test": 10000,
+        "n_train": 60000,
+        "num_classes": 10,
+        "test_sha256": "4f5b3b6253750c12f45aa8964b1d9055e026c382221cc9a4b7f35d6a8fec48d8",
+        "train_sha256": "204530f0bbc19ed3737560ee05bcf9d35cefaee026e51cd394e3b1601b868ba9"
+      }
+    },
+    "5_configs": {
+      "cifar10_dirichlet": {
+        "_path": "configs/final/cifar10_dirichlet.json",
+        "alphas": [
+          0.25,
+          0.5,
+          0.75,
+          1.0
+        ],
+        "architecture": "simplecnn",
+        "batch_size": 64,
+        "checkpoints_dir": "checkpoints_final_unused",
+        "clients_per_round": 1.0,
+        "compromised_checkpoints_dir": "checkpoints",
+        "compromised_results_dir": "results/raw",
+        "data_root": "data",
+        "dataset": "cifar10",
+        "device": "auto",
+        "exp_id": "cifar10_dirichlet",
+        "history_every": 2,
+        "local_epochs": 2,
+        "logs_dir": "logs_final",
+        "lr": 0.01,
+        "malicious_clients": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "methods": {
+          "cf_sameinit": {},
+          "federaser": {
+            "calibration_ratio": 0.5
+          },
+          "full_retrain": {},
+          "grad_negation": {
+            "ascent_epochs": 5,
+            "ascent_lr": 0.002,
+            "check_every": 1,
+            "loss_threshold_mult": 4.0,
+            "radius": 1.0,
+            "recovery_rounds": 5
+          },
+          "short_retrain": {
+            "rounds": 5
+          }
+        },
+        "momentum": 0.9,
+        "notes": "robustness experiment: label-skew non-IID partition, Dirichlet beta=0.5 (Hsu et al. 2019); FINAL (2026-09-07): assembled by scripts/promote_results.py from results/raw (unchanged methods) and results_v2/raw (corrected FedEraser, cf_sameinit); see results_final/PROVENANCE.json",
+        "num_clients": 20,
+        "optimizer": "sgd",
+        "partition": {
+          "beta": 0.5,
+          "scheme": "dirichlet"
+        },
+        "poison_rate": 0.5,
+        "results_dir": "results_final/raw",
+        "rounds": 40,
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "target_label": 0,
+        "trigger": {
+          "offset": 1,
+          "size": 4,
+          "value": 1.0
+        },
+        "weight_decay": 0.0
+      },
+      "cifar10_iid": {
+        "_path": "configs/final/cifar10_iid.json",
+        "alphas": [
+          0.25,
+          0.5,
+          0.75,
+          1.0
+        ],
+        "architecture": "simplecnn",
+        "batch_size": 64,
+        "checkpoints_dir": "checkpoints_final_unused",
+        "clients_per_round": 1.0,
+        "compromised_checkpoints_dir": "checkpoints",
+        "compromised_results_dir": "results/raw",
+        "data_root": "data",
+        "dataset": "cifar10",
+        "device": "auto",
+        "exp_id": "cifar10_iid",
+        "history_every": 2,
+        "local_epochs": 2,
+        "logs_dir": "logs_final",
+        "lr": 0.01,
+        "malicious_clients": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "methods": {
+          "cf_sameinit": {},
+          "federaser": {
+            "calibration_ratio": 0.5
+          },
+          "fine_pruning": {
+            "max_acc_drop": 0.04,
+            "recovery_rounds": 5
+          },
+          "full_retrain": {},
+          "grad_negation": {
+            "ascent_epochs": 5,
+            "ascent_lr": 0.002,
+            "check_every": 1,
+            "loss_threshold_mult": 4.0,
+            "radius": 1.0,
+            "recovery_rounds": 5
+          },
+          "short_retrain": {
+            "rounds": 5
+          }
+        },
+        "momentum": 0.9,
+        "notes": "main experiment, IID partition; T=40 chosen from pilot (logs/pilot/pilot30_cifar10); fine_pruning added 2026-09-06 as a post-hoc mitigation baseline (CIFAR-10 only); FINAL (2026-09-07): assembled by scripts/promote_results.py from results/raw (unchanged methods) and results_v2/raw (corrected FedEraser, cf_sameinit); see results_final/PROVENANCE.json",
+        "num_clients": 20,
+        "optimizer": "sgd",
+        "partition": {
+          "beta": null,
+          "scheme": "iid"
+        },
+        "poison_rate": 0.5,
+        "results_dir": "results_final/raw",
+        "rounds": 40,
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "target_label": 0,
+        "trigger": {
+          "offset": 1,
+          "size": 4,
+          "value": 1.0
+        },
+        "weight_decay": 0.0
+      },
+      "cifar10_iid_federaser_dt1": {
+        "_path": "configs/final/cifar10_iid_federaser_dt1.json",
+        "alphas": [
+          1.0
+        ],
+        "architecture": "simplecnn",
+        "batch_size": 64,
+        "checkpoints_dir": "checkpoints_final_unused",
+        "clients_per_round": 1.0,
+        "compromised_checkpoints_dir": "checkpoints",
+        "compromised_results_dir": "results/raw",
+        "data_root": "data",
+        "dataset": "cifar10",
+        "device": "auto",
+        "exp_id": "cifar10_iid_federaser_dt1",
+        "history_every": 1,
+        "local_epochs": 2,
+        "logs_dir": "logs_final",
+        "lr": 0.01,
+        "malicious_clients": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "methods": {
+          "cf_sameinit": {},
+          "federaser": {
+            "calibration_ratio": 0.5
+          },
+          "full_retrain": {}
+        },
+        "momentum": 0.9,
+        "notes": "supplementary sensitivity: FedEraser with retaining interval Delta_t=1 (history stored every round), alpha=1 only; compromised model retrained with identical seeds/protocol (deterministic on this machine); FINAL (2026-09-07): assembled by scripts/promote_results.py from results/raw (unchanged methods) and results_v2/raw (corrected FedEraser, cf_sameinit); see results_final/PROVENANCE.json",
+        "num_clients": 20,
+        "optimizer": "sgd",
+        "partition": {
+          "beta": null,
+          "scheme": "iid"
+        },
+        "poison_rate": 0.5,
+        "results_dir": "results_final/raw",
+        "rounds": 40,
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "target_label": 0,
+        "trigger": {
+          "offset": 1,
+          "size": 4,
+          "value": 1.0
+        },
+        "weight_decay": 0.0
+      },
+      "cifar10_iid_federaser_r1": {
+        "_path": "configs/final/cifar10_iid_federaser_r1.json",
+        "alphas": [
+          1.0
+        ],
+        "architecture": "simplecnn",
+        "batch_size": 64,
+        "checkpoints_dir": "checkpoints_final_unused",
+        "clients_per_round": 1.0,
+        "compromised_checkpoints_dir": "checkpoints",
+        "compromised_results_dir": "results/raw",
+        "data_root": "data",
+        "dataset": "cifar10",
+        "device": "auto",
+        "exp_id": "cifar10_iid_federaser_r1",
+        "history_every": 2,
+        "local_epochs": 2,
+        "logs_dir": "logs_final",
+        "lr": 0.01,
+        "malicious_clients": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "methods": {
+          "cf_sameinit": {},
+          "federaser": {
+            "calibration_ratio": 1.0
+          },
+          "full_retrain": {}
+        },
+        "momentum": 0.9,
+        "notes": "supplementary sensitivity: FedEraser with calibration ratio r=1.0 (E_cal = 2 local epochs), alpha=1 only; shares nothing with cifar10_iid on disk (separate exp_id) but uses identical seeds/protocol; FINAL (2026-09-07): assembled by scripts/promote_results.py from results/raw (unchanged methods) and results_v2/raw (corrected FedEraser, cf_sameinit); see results_final/PROVENANCE.json",
+        "num_clients": 20,
+        "optimizer": "sgd",
+        "partition": {
+          "beta": null,
+          "scheme": "iid"
+        },
+        "poison_rate": 0.5,
+        "results_dir": "results_final/raw",
+        "rounds": 40,
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "target_label": 0,
+        "trigger": {
+          "offset": 1,
+          "size": 4,
+          "value": 1.0
+        },
+        "weight_decay": 0.0
+      },
+      "gtsrb_iid": {
+        "_path": "configs/final/gtsrb_iid.json",
+        "alphas": [
+          0.25,
+          0.5,
+          0.75,
+          1.0
+        ],
+        "architecture": "simplecnn",
+        "batch_size": 64,
+        "checkpoints_dir": "checkpoints_final_unused",
+        "clients_per_round": 1.0,
+        "compromised_checkpoints_dir": "checkpoints",
+        "compromised_results_dir": "results/raw",
+        "data_root": "data",
+        "dataset": "gtsrb",
+        "device": "auto",
+        "exp_id": "gtsrb_iid",
+        "history_every": 2,
+        "local_epochs": 2,
+        "logs_dir": "logs_final",
+        "lr": 0.01,
+        "malicious_clients": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "methods": {
+          "cf_sameinit": {},
+          "federaser": {
+            "calibration_ratio": 0.5
+          },
+          "full_retrain": {},
+          "grad_negation": {
+            "ascent_epochs": 5,
+            "ascent_lr": 0.002,
+            "check_every": 1,
+            "loss_threshold_mult": 4.0,
+            "radius": 1.0,
+            "recovery_rounds": 5
+          },
+          "short_retrain": {
+            "rounds": 5
+          }
+        },
+        "momentum": 0.9,
+        "notes": "main experiment; T=40 chosen from pilot (logs/pilot/pilot_gtsrb, ASR still rising at 30); FINAL (2026-09-07): assembled by scripts/promote_results.py from results/raw (unchanged methods) and results_v2/raw (corrected FedEraser, cf_sameinit); see results_final/PROVENANCE.json",
+        "num_clients": 20,
+        "optimizer": "sgd",
+        "partition": {
+          "beta": null,
+          "scheme": "iid"
+        },
+        "poison_rate": 0.5,
+        "results_dir": "results_final/raw",
+        "rounds": 40,
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "target_label": 0,
+        "trigger": {
+          "offset": 1,
+          "size": 4,
+          "value": 1.0
+        },
+        "weight_decay": 0.0
+      },
+      "mnist_iid": {
+        "_path": "configs/final/mnist_iid.json",
+        "alphas": [
+          0.25,
+          0.5,
+          0.75,
+          1.0
+        ],
+        "architecture": "simplecnn",
+        "batch_size": 64,
+        "checkpoints_dir": "checkpoints_final_unused",
+        "clients_per_round": 1.0,
+        "compromised_checkpoints_dir": "checkpoints",
+        "compromised_results_dir": "results/raw",
+        "data_root": "data",
+        "dataset": "mnist",
+        "device": "auto",
+        "exp_id": "mnist_iid",
+        "history_every": 2,
+        "local_epochs": 2,
+        "logs_dir": "logs_final",
+        "lr": 0.01,
+        "malicious_clients": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "methods": {
+          "cf_sameinit": {},
+          "federaser": {
+            "calibration_ratio": 0.5
+          },
+          "full_retrain": {},
+          "grad_negation": {
+            "ascent_epochs": 5,
+            "ascent_lr": 0.002,
+            "check_every": 1,
+            "loss_threshold_mult": 4.0,
+            "radius": 1.0,
+            "recovery_rounds": 5
+          },
+          "short_retrain": {
+            "rounds": 5
+          }
+        },
+        "momentum": 0.9,
+        "notes": "main experiment; T=20 chosen from pilot (logs/pilot/pilot_mnist); FINAL (2026-09-07): assembled by scripts/promote_results.py from results/raw (unchanged methods) and results_v2/raw (corrected FedEraser, cf_sameinit); see results_final/PROVENANCE.json",
+        "num_clients": 20,
+        "optimizer": "sgd",
+        "partition": {
+          "beta": null,
+          "scheme": "iid"
+        },
+        "poison_rate": 0.5,
+        "results_dir": "results_final/raw",
+        "rounds": 20,
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "target_label": 0,
+        "trigger": {
+          "offset": 1,
+          "size": 4,
+          "value": 1.0
+        },
+        "weight_decay": 0.0
+      }
+    },
+    "6_partitions": {
+      "cifar10_dirichlet": {
+        "client_sizes": [
+          2881,
+          2157,
+          4159,
+          1974,
+          2004,
+          3186,
+          1481,
+          2118,
+          2543,
+          3745,
+          3281,
+          2328,
+          2525,
+          3808,
+          1421,
+          2282,
+          1407,
+          3642,
+          1840,
+          1218
+        ],
+        "max_size": 4159,
+        "min_size": 1218,
+        "poisoned_per_malicious_client": {
+          "0": 1440,
+          "1": 1078,
+          "2": 2080,
+          "3": 987
+        }
+      },
+      "cifar10_iid": {
+        "client_sizes": [
+          2500,
+          2500,
+          2500,
+          2500,
+          2500,
+          2500,
+          2500,
+          2500,
+          2500,
+          2500,
+          2500,
+          2500,
+          2500,
+          2500,
+          2500,
+          2500,
+          2500,
+          2500,
+          2500,
+          2500
+        ],
+        "max_size": 2500,
+        "min_size": 2500,
+        "poisoned_per_malicious_client": {
+          "0": 1250,
+          "1": 1250,
+          "2": 1250,
+          "3": 1250
+        }
+      },
+      "cifar10_iid_federaser_dt1": {
+        "client_sizes": [
+          2500,
+          2500,
+          2500,
+          2500,
+          2500,
+          2500,
+          2500,
+          2500,
+          2500,
+          2500,
+          2500,
+          2500,
+          2500,
+          2500,
+          2500,
+          2500,
+          2500,
+          2500,
+          2500,
+          2500
+        ],
+        "max_size": 2500,
+        "min_size": 2500,
+        "poisoned_per_malicious_client": {
+          "0": 1250,
+          "1": 1250,
+          "2": 1250,
+          "3": 1250
+        }
+      },
+      "cifar10_iid_federaser_r1": {
+        "client_sizes": [
+          2500,
+          2500,
+          2500,
+          2500,
+          2500,
+          2500,
+          2500,
+          2500,
+          2500,
+          2500,
+          2500,
+          2500,
+          2500,
+          2500,
+          2500,
+          2500,
+          2500,
+          2500,
+          2500,
+          2500
+        ],
+        "max_size": 2500,
+        "min_size": 2500,
+        "poisoned_per_malicious_client": {
+          "0": 1250,
+          "1": 1250,
+          "2": 1250,
+          "3": 1250
+        }
+      },
+      "gtsrb_iid": {
+        "client_sizes": [
+          1332,
+          1332,
+          1332,
+          1332,
+          1332,
+          1332,
+          1332,
+          1332,
+          1332,
+          1332,
+          1332,
+          1332,
+          1332,
+          1332,
+          1332,
+          1332,
+          1332,
+          1332,
+          1332,
+          1332
+        ],
+        "max_size": 1332,
+        "min_size": 1332,
+        "poisoned_per_malicious_client": {
+          "0": 666,
+          "1": 666,
+          "2": 666,
+          "3": 666
+        }
+      },
+      "mnist_iid": {
+        "client_sizes": [
+          3000,
+          3000,
+          3000,
+          3000,
+          3000,
+          3000,
+          3000,
+          3000,
+          3000,
+          3000,
+          3000,
+          3000,
+          3000,
+          3000,
+          3000,
+          3000,
+          3000,
+          3000,
+          3000,
+          3000
+        ],
+        "max_size": 3000,
+        "min_size": 3000,
+        "poisoned_per_malicious_client": {
+          "0": 1500,
+          "1": 1500,
+          "2": 1500,
+          "3": 1500
+        }
+      }
+    },
+    "7_clean_training": {
+      "cifar10_dirichlet/seed0": {
+        "ASR": 0.024,
+        "BA": 0.6656,
+        "n_asr": 9000,
+        "n_test": 10000
+      },
+      "cifar10_dirichlet/seed1": {
+        "ASR": 0.03211111111111111,
+        "BA": 0.6568,
+        "n_asr": 9000,
+        "n_test": 10000
+      },
+      "cifar10_dirichlet/seed2": {
+        "ASR": 0.043111111111111114,
+        "BA": 0.6639,
+        "n_asr": 9000,
+        "n_test": 10000
+      },
+      "cifar10_dirichlet/seed3": {
+        "ASR": 0.02811111111111111,
+        "BA": 0.6681,
+        "n_asr": 9000,
+        "n_test": 10000
+      },
+      "cifar10_dirichlet/seed4": {
+        "ASR": 0.025777777777777778,
+        "BA": 0.6669,
+        "n_asr": 9000,
+        "n_test": 10000
+      },
+      "cifar10_iid/seed0": {
+        "ASR": 0.022444444444444444,
+        "BA": 0.6854,
+        "n_asr": 9000,
+        "n_test": 10000
+      },
+      "cifar10_iid/seed1": {
+        "ASR": 0.017777777777777778,
+        "BA": 0.6929,
+        "n_asr": 9000,
+        "n_test": 10000
+      },
+      "cifar10_iid/seed2": {
+        "ASR": 0.021444444444444443,
+        "BA": 0.6913,
+        "n_asr": 9000,
+        "n_test": 10000
+      },
+      "cifar10_iid/seed3": {
+        "ASR": 0.021111111111111112,
+        "BA": 0.6838,
+        "n_asr": 9000,
+        "n_test": 10000
+      },
+      "cifar10_iid/seed4": {
+        "ASR": 0.023555555555555555,
+        "BA": 0.6854,
+        "n_asr": 9000,
+        "n_test": 10000
+      },
+      "cifar10_iid_federaser_dt1/seed0": {
+        "ASR": 0.022444444444444444,
+        "BA": 0.6854,
+        "n_asr": 9000,
+        "n_test": 10000
+      },
+      "cifar10_iid_federaser_dt1/seed1": {
+        "ASR": 0.017777777777777778,
+        "BA": 0.6929,
+        "n_asr": 9000,
+        "n_test": 10000
+      },
+      "cifar10_iid_federaser_dt1/seed2": {
+        "ASR": 0.021444444444444443,
+        "BA": 0.6913,
+        "n_asr": 9000,
+        "n_test": 10000
+      },
+      "cifar10_iid_federaser_dt1/seed3": {
+        "ASR": 0.021111111111111112,
+        "BA": 0.6838,
+        "n_asr": 9000,
+        "n_test": 10000
+      },
+      "cifar10_iid_federaser_dt1/seed4": {
+        "ASR": 0.023555555555555555,
+        "BA": 0.6854,
+        "n_asr": 9000,
+        "n_test": 10000
+      },
+      "cifar10_iid_federaser_r1/seed0": {
+        "ASR": 0.022444444444444444,
+        "BA": 0.6854,
+        "n_asr": 9000,
+        "n_test": 10000
+      },
+      "cifar10_iid_federaser_r1/seed1": {
+        "ASR": 0.017777777777777778,
+        "BA": 0.6929,
+        "n_asr": 9000,
+        "n_test": 10000
+      },
+      "cifar10_iid_federaser_r1/seed2": {
+        "ASR": 0.021444444444444443,
+        "BA": 0.6913,
+        "n_asr": 9000,
+        "n_test": 10000
+      },
+      "cifar10_iid_federaser_r1/seed3": {
+        "ASR": 0.021111111111111112,
+        "BA": 0.6838,
+        "n_asr": 9000,
+        "n_test": 10000
+      },
+      "cifar10_iid_federaser_r1/seed4": {
+        "ASR": 0.023555555555555555,
+        "BA": 0.6854,
+        "n_asr": 9000,
+        "n_test": 10000
+      },
+      "gtsrb_iid/seed0": {
+        "ASR": 0.002466189339697693,
+        "BA": 0.8269200316706254,
+        "n_asr": 12570,
+        "n_test": 12630
+      },
+      "gtsrb_iid/seed1": {
+        "ASR": 0.0018297533810660302,
+        "BA": 0.8251781472684085,
+        "n_asr": 12570,
+        "n_test": 12630
+      },
+      "gtsrb_iid/seed2": {
+        "ASR": 0.0036595067621320605,
+        "BA": 0.8095803642121931,
+        "n_asr": 12570,
+        "n_test": 12630
+      },
+      "gtsrb_iid/seed3": {
+        "ASR": 0.0032617342879872713,
+        "BA": 0.8231987331749802,
+        "n_asr": 12570,
+        "n_test": 12630
+      },
+      "gtsrb_iid/seed4": {
+        "ASR": 0.0007159904534606205,
+        "BA": 0.8348376880443389,
+        "n_asr": 12570,
+        "n_test": 12630
+      },
+      "mnist_iid/seed0": {
+        "ASR": 0.0016629711751662971,
+        "BA": 0.9856,
+        "n_asr": 9020,
+        "n_test": 10000
+      },
+      "mnist_iid/seed1": {
+        "ASR": 0.0013303769401330377,
+        "BA": 0.9849,
+        "n_asr": 9020,
+        "n_test": 10000
+      },
+      "mnist_iid/seed2": {
+        "ASR": 0.0013303769401330377,
+        "BA": 0.9857,
+        "n_asr": 9020,
+        "n_test": 10000
+      },
+      "mnist_iid/seed3": {
+        "ASR": 0.0017738359201773836,
+        "BA": 0.9869,
+        "n_asr": 9020,
+        "n_test": 10000
+      },
+      "mnist_iid/seed4": {
+        "ASR": 0.0014412416851441242,
+        "BA": 0.9852,
+        "n_asr": 9020,
+        "n_test": 10000
+      }
+    },
+    "8_compromised": {
+      "cifar10_dirichlet/seed0": {
+        "ASR": 0.9381111111111111,
+        "BA": 0.6708,
+        "checkpoint_sha256": "5a9fa9c5c223df70cf81d1a3b3835eefb09a31e836bd8041cad81b6c716ff2dc",
+        "runtime_sec": 202.45906376838684
+      },
+      "cifar10_dirichlet/seed1": {
+        "ASR": 0.9451111111111111,
+        "BA": 0.6639,
+        "checkpoint_sha256": "7a8e9e91a6fb309221cf8a4453cf01e02eb18bacb82c53df5a32013d103764d0",
+        "runtime_sec": 179.67013931274414
+      },
+      "cifar10_dirichlet/seed2": {
+        "ASR": 0.9214444444444444,
+        "BA": 0.6623,
+        "checkpoint_sha256": "5ae8b738a035e8d67d79e9e05aef4f21350f20846d387a53bec02d1a9a99e79c",
+        "runtime_sec": 133.90014910697937
+      },
+      "cifar10_dirichlet/seed3": {
+        "ASR": 0.9252222222222222,
+        "BA": 0.6653,
+        "checkpoint_sha256": "a0e97b295c303d36d40661d8614aa29fcbc218e6e70d0874a18c5005f1aa3ab9",
+        "runtime_sec": 194.51862621307373
+      },
+      "cifar10_dirichlet/seed4": {
+        "ASR": 0.8844444444444445,
+        "BA": 0.6595,
+        "checkpoint_sha256": "b94aa05b280842774116ec5388de93c95ba1ee1dd0ec02c837c35cef545e859c",
+        "runtime_sec": 177.9429202079773
+      },
+      "cifar10_iid/seed0": {
+        "ASR": 0.9093333333333333,
+        "BA": 0.6886,
+        "checkpoint_sha256": "71ba2b115e5d387e2ef5e5175301d7b1a5120580908b76b5df952219d03f7cde",
+        "runtime_sec": 127.89005398750305
+      },
+      "cifar10_iid/seed1": {
+        "ASR": 0.9164444444444444,
+        "BA": 0.6859,
+        "checkpoint_sha256": "7ffb0b59777d8bdfcb1ebc564115490456906b9dd2f730f08ad7cd814e55c033",
+        "runtime_sec": 131.17931294441223
+      },
+      "cifar10_iid/seed2": {
+        "ASR": 0.9155555555555556,
+        "BA": 0.6921,
+        "checkpoint_sha256": "1cff5ab85e19d20cb6d8fa0b39371035c1fa1aed86dd394d8b1847ba3fbefad9",
+        "runtime_sec": 129.64969420433044
+      },
+      "cifar10_iid/seed3": {
+        "ASR": 0.9108888888888889,
+        "BA": 0.6825,
+        "checkpoint_sha256": "edcead742b516b8facd75d849daf6a485d39c71008855b94ca7d962f9cee21f2",
+        "runtime_sec": 134.7254388332367
+      },
+      "cifar10_iid/seed4": {
+        "ASR": 0.9066666666666666,
+        "BA": 0.6821,
+        "checkpoint_sha256": "1baf2e4a28de9cb92fadab4c72d6aba2b2d526a5170c45b21dfaa6330d241a05",
+        "runtime_sec": 133.81375408172607
+      },
+      "cifar10_iid_federaser_dt1/seed0": {
+        "ASR": 0.9093333333333333,
+        "BA": 0.6886,
+        "checkpoint_sha256": "71ba2b115e5d387e2ef5e5175301d7b1a5120580908b76b5df952219d03f7cde",
+        "runtime_sec": 193.664972782135
+      },
+      "cifar10_iid_federaser_dt1/seed1": {
+        "ASR": 0.9164444444444444,
+        "BA": 0.6859,
+        "checkpoint_sha256": "7ffb0b59777d8bdfcb1ebc564115490456906b9dd2f730f08ad7cd814e55c033",
+        "runtime_sec": 136.48266696929932
+      },
+      "cifar10_iid_federaser_dt1/seed2": {
+        "ASR": 0.9155555555555556,
+        "BA": 0.6921,
+        "checkpoint_sha256": "1cff5ab85e19d20cb6d8fa0b39371035c1fa1aed86dd394d8b1847ba3fbefad9",
+        "runtime_sec": 136.19713020324707
+      },
+      "cifar10_iid_federaser_dt1/seed3": {
+        "ASR": 0.9108888888888889,
+        "BA": 0.6825,
+        "checkpoint_sha256": "edcead742b516b8facd75d849daf6a485d39c71008855b94ca7d962f9cee21f2",
+        "runtime_sec": 135.93073201179504
+      },
+      "cifar10_iid_federaser_dt1/seed4": {
+        "ASR": 0.9066666666666666,
+        "BA": 0.6821,
+        "checkpoint_sha256": "1baf2e4a28de9cb92fadab4c72d6aba2b2d526a5170c45b21dfaa6330d241a05",
+        "runtime_sec": 138.03895020484924
+      },
+      "cifar10_iid_federaser_r1/seed0": {
+        "ASR": 0.9093333333333333,
+        "BA": 0.6886,
+        "checkpoint_sha256": "71ba2b115e5d387e2ef5e5175301d7b1a5120580908b76b5df952219d03f7cde",
+        "runtime_sec": 171.03206610679626
+      },
+      "cifar10_iid_federaser_r1/seed1": {
+        "ASR": 0.9164444444444444,
+        "BA": 0.6859,
+        "checkpoint_sha256": "7ffb0b59777d8bdfcb1ebc564115490456906b9dd2f730f08ad7cd814e55c033",
+        "runtime_sec": 194.29338002204895
+      },
+      "cifar10_iid_federaser_r1/seed2": {
+        "ASR": 0.9155555555555556,
+        "BA": 0.6921,
+        "checkpoint_sha256": "1cff5ab85e19d20cb6d8fa0b39371035c1fa1aed86dd394d8b1847ba3fbefad9",
+        "runtime_sec": 197.29496884346008
+      },
+      "cifar10_iid_federaser_r1/seed3": {
+        "ASR": 0.9108888888888889,
+        "BA": 0.6825,
+        "checkpoint_sha256": "edcead742b516b8facd75d849daf6a485d39c71008855b94ca7d962f9cee21f2",
+        "runtime_sec": 188.59444403648376
+      },
+      "cifar10_iid_federaser_r1/seed4": {
+        "ASR": 0.9066666666666666,
+        "BA": 0.6821,
+        "checkpoint_sha256": "1baf2e4a28de9cb92fadab4c72d6aba2b2d526a5170c45b21dfaa6330d241a05",
+        "runtime_sec": 189.14148926734924
+      },
+      "gtsrb_iid/seed0": {
+        "ASR": 0.8408114558472554,
+        "BA": 0.8319873317498021,
+        "checkpoint_sha256": "f653ed1444f0b5525cccbcb32f97a61b0f97e64a08645da48152ed6443d97ff8",
+        "runtime_sec": 73.91638827323914
+      },
+      "gtsrb_iid/seed1": {
+        "ASR": 0.82824184566428,
+        "BA": 0.8353919239904988,
+        "checkpoint_sha256": "c7d75f9eb05701de6a30bdaa74f4282d4671be568e673be42d4e440d922a2b43",
+        "runtime_sec": 71.96959090232849
+      },
+      "gtsrb_iid/seed2": {
+        "ASR": 0.8645186953062848,
+        "BA": 0.8193982581155977,
+        "checkpoint_sha256": "87b45a2098ea4a3404e316cb7770c6608916a773f1021ad6acd45d4ded7d8e92",
+        "runtime_sec": 71.80446887016296
+      },
+      "gtsrb_iid/seed3": {
+        "ASR": 0.7985680190930787,
+        "BA": 0.8194774346793349,
+        "checkpoint_sha256": "0d6d68c3f1313b4bad209a72227815f6043275052483b864d2688ac3273bcb8a",
+        "runtime_sec": 87.18236708641052
+      },
+      "gtsrb_iid/seed4": {
+        "ASR": 0.839538583929992,
+        "BA": 0.8335708630245448,
+        "checkpoint_sha256": "a637079079a2ed54f8ea10e35931d64d6a783177912e93c432d19324ce3a89a3",
+        "runtime_sec": 103.94699168205261
+      },
+      "mnist_iid/seed0": {
+        "ASR": 0.9922394678492239,
+        "BA": 0.9862,
+        "checkpoint_sha256": "37819b091053cfd090b834a14f3e2cdfcb2614453581bbdd6ac4cbb07e932328",
+        "runtime_sec": 73.52419972419739
+      },
+      "mnist_iid/seed1": {
+        "ASR": 0.9939024390243902,
+        "BA": 0.9845,
+        "checkpoint_sha256": "37677392c176ee8f5190698a8ac7023322814b5a0332784b2a27c80367d04705",
+        "runtime_sec": 73.77835011482239
+      },
+      "mnist_iid/seed2": {
+        "ASR": 0.9970066518847006,
+        "BA": 0.9858,
+        "checkpoint_sha256": "0ef9f58621a10e0be07c0d84696be419862ef60edb241b1074ea27f82ea300e2",
+        "runtime_sec": 76.24547481536865
+      },
+      "mnist_iid/seed3": {
+        "ASR": 0.9952328159645233,
+        "BA": 0.9858,
+        "checkpoint_sha256": "641bd94653462815794188a0424bd843116b9f0c1c2b2b9874beb943161c1897",
+        "runtime_sec": 74.95696187019348
+      },
+      "mnist_iid/seed4": {
+        "ASR": 0.9953436807095344,
+        "BA": 0.9851,
+        "checkpoint_sha256": "95c5fc9a74d6455c039752389d9548b8b33cd019f76d9ec225ede4f83d00b472",
+        "runtime_sec": 76.30757999420166
+      }
+    },
+    "9_pre_unlearning": {
+      "cifar10_dirichlet/seed0": {
+        "ASR": 0.9381111111111111,
+        "BA": 0.6708,
+        "n_asr": 9000,
+        "n_test": 10000
+      },
+      "cifar10_dirichlet/seed1": {
+        "ASR": 0.9451111111111111,
+        "BA": 0.6639,
+        "n_asr": 9000,
+        "n_test": 10000
+      },
+      "cifar10_dirichlet/seed2": {
+        "ASR": 0.9214444444444444,
+        "BA": 0.6623,
+        "n_asr": 9000,
+        "n_test": 10000
+      },
+      "cifar10_dirichlet/seed3": {
+        "ASR": 0.9252222222222222,
+        "BA": 0.6653,
+        "n_asr": 9000,
+        "n_test": 10000
+      },
+      "cifar10_dirichlet/seed4": {
+        "ASR": 0.8844444444444445,
+        "BA": 0.6595,
+        "n_asr": 9000,
+        "n_test": 10000
+      },
+      "cifar10_iid/seed0": {
+        "ASR": 0.9093333333333333,
+        "BA": 0.6886,
+        "n_asr": 9000,
+        "n_test": 10000
+      },
+      "cifar10_iid/seed1": {
+        "ASR": 0.9164444444444444,
+        "BA": 0.6859,
+        "n_asr": 9000,
+        "n_test": 10000
+      },
+      "cifar10_iid/seed2": {
+        "ASR": 0.9155555555555556,
+        "BA": 0.6921,
+        "n_asr": 9000,
+        "n_test": 10000
+      },
+      "cifar10_iid/seed3": {
+        "ASR": 0.9108888888888889,
+        "BA": 0.6825,
+        "n_asr": 9000,
+        "n_test": 10000
+      },
+      "cifar10_iid/seed4": {
+        "ASR": 0.9066666666666666,
+        "BA": 0.6821,
+        "n_asr": 9000,
+        "n_test": 10000
+      },
+      "cifar10_iid_federaser_dt1/seed0": {
+        "ASR": 0.9093333333333333,
+        "BA": 0.6886,
+        "n_asr": 9000,
+        "n_test": 10000
+      },
+      "cifar10_iid_federaser_dt1/seed1": {
+        "ASR": 0.9164444444444444,
+        "BA": 0.6859,
+        "n_asr": 9000,
+        "n_test": 10000
+      },
+      "cifar10_iid_federaser_dt1/seed2": {
+        "ASR": 0.9155555555555556,
+        "BA": 0.6921,
+        "n_asr": 9000,
+        "n_test": 10000
+      },
+      "cifar10_iid_federaser_dt1/seed3": {
+        "ASR": 0.9108888888888889,
+        "BA": 0.6825,
+        "n_asr": 9000,
+        "n_test": 10000
+      },
+      "cifar10_iid_federaser_dt1/seed4": {
+        "ASR": 0.9066666666666666,
+        "BA": 0.6821,
+        "n_asr": 9000,
+        "n_test": 10000
+      },
+      "cifar10_iid_federaser_r1/seed0": {
+        "ASR": 0.9093333333333333,
+        "BA": 0.6886,
+        "n_asr": 9000,
+        "n_test": 10000
+      },
+      "cifar10_iid_federaser_r1/seed1": {
+        "ASR": 0.9164444444444444,
+        "BA": 0.6859,
+        "n_asr": 9000,
+        "n_test": 10000
+      },
+      "cifar10_iid_federaser_r1/seed2": {
+        "ASR": 0.9155555555555556,
+        "BA": 0.6921,
+        "n_asr": 9000,
+        "n_test": 10000
+      },
+      "cifar10_iid_federaser_r1/seed3": {
+        "ASR": 0.9108888888888889,
+        "BA": 0.6825,
+        "n_asr": 9000,
+        "n_test": 10000
+      },
+      "cifar10_iid_federaser_r1/seed4": {
+        "ASR": 0.9066666666666666,
+        "BA": 0.6821,
+        "n_asr": 9000,
+        "n_test": 10000
+      },
+      "gtsrb_iid/seed0": {
+        "ASR": 0.8408114558472554,
+        "BA": 0.8319873317498021,
+        "n_asr": 12570,
+        "n_test": 12630
+      },
+      "gtsrb_iid/seed1": {
+        "ASR": 0.82824184566428,
+        "BA": 0.8353919239904988,
+        "n_asr": 12570,
+        "n_test": 12630
+      },
+      "gtsrb_iid/seed2": {
+        "ASR": 0.8645186953062848,
+        "BA": 0.8193982581155977,
+        "n_asr": 12570,
+        "n_test": 12630
+      },
+      "gtsrb_iid/seed3": {
+        "ASR": 0.7985680190930787,
+        "BA": 0.8194774346793349,
+        "n_asr": 12570,
+        "n_test": 12630
+      },
+      "gtsrb_iid/seed4": {
+        "ASR": 0.839538583929992,
+        "BA": 0.8335708630245448,
+        "n_asr": 12570,
+        "n_test": 12630
+      },
+      "mnist_iid/seed0": {
+        "ASR": 0.9922394678492239,
+        "BA": 0.9862,
+        "n_asr": 9020,
+        "n_test": 10000
+      },
+      "mnist_iid/seed1": {
+        "ASR": 0.9939024390243902,
+        "BA": 0.9845,
+        "n_asr": 9020,
+        "n_test": 10000
+      },
+      "mnist_iid/seed2": {
+        "ASR": 0.9970066518847006,
+        "BA": 0.9858,
+        "n_asr": 9020,
+        "n_test": 10000
+      },
+      "mnist_iid/seed3": {
+        "ASR": 0.9952328159645233,
+        "BA": 0.9858,
+        "n_asr": 9020,
+        "n_test": 10000
+      },
+      "mnist_iid/seed4": {
+        "ASR": 0.9953436807095344,
+        "BA": 0.9851,
+        "n_asr": 9020,
+        "n_test": 10000
+      }
+    }
+  },
+  "started": "2026-09-07T13:59:39-0600",
+  "status": "all declared runs completed and verified",
+  "versions": {
+    "matplotlib": "3.10.0",
+    "numpy": "2.1.3",
+    "pandas": "2.2.3",
+    "python": "3.13.5",
+    "scipy": "1.15.3",
+    "torch": "2.9.1",
+    "torchvision": "0.24.1"
+  }
+}

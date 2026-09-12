@@ -1,0 +1,59 @@
+{
+  "exp_id": "gtsrb_iid",
+  "dataset": "gtsrb",
+  "rounds": 40,
+  "partition": {
+    "scheme": "iid",
+    "beta": null
+  },
+  "notes": "main experiment; T=40 chosen from pilot (logs/pilot/pilot_gtsrb, ASR still rising at 30); V2 (2026-09-07): corrected FedEraser (first stored round uncalibrated) and same-initialisation counterfactuals for every fraction, computed from the unchanged compromised checkpoints/histories in results/raw/legacy_v1 and checkpoints/",
+  "data_root": "data",
+  "architecture": "simplecnn",
+  "num_clients": 20,
+  "malicious_clients": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "poison_rate": 0.5,
+  "target_label": 0,
+  "trigger": {
+    "size": 4,
+    "value": 1.0,
+    "offset": 1
+  },
+  "local_epochs": 2,
+  "batch_size": 64,
+  "optimizer": "sgd",
+  "lr": 0.01,
+  "momentum": 0.9,
+  "weight_decay": 0.0,
+  "clients_per_round": 1.0,
+  "history_every": 2,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "alphas": [
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "methods": {
+    "federaser": {
+      "calibration_ratio": 0.5
+    },
+    "cf_sameinit": {}
+  },
+  "device": "auto",
+  "results_dir": "results/raw/corrected_v2",
+  "checkpoints_dir": "checkpoints_v2",
+  "logs_dir": "logs_v2",
+  "compromised_results_dir": "results/raw/legacy_v1",
+  "compromised_checkpoints_dir": "checkpoints"
+}

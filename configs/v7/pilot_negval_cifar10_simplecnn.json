@@ -1,0 +1,60 @@
+{
+  "exp_id": "pilot_negval_cifar10_simplecnn",
+  "dataset": "cifar10",
+  "rounds": 30,
+  "partition": {
+    "scheme": "iid",
+    "beta": null
+  },
+  "notes": "Gradient-negation threshold re-selection on a validation split (SimpleCNN, T=30 as in the original pilot). PILOT (v7 hyperparameter selection, validation split only): 5000 training images are held out (seed-determined) before partitioning and used for every evaluation; the test set is never evaluated. Seed 100 is not a reported seed. Selection rules were fixed in audit/v7_hyperparameter_selection_protocol.md before this pilot was run.",
+  "data_root": "data",
+  "architecture": "simplecnn",
+  "num_clients": 20,
+  "malicious_clients": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "poison_rate": 0.5,
+  "target_label": 0,
+  "trigger": {
+    "size": 4,
+    "value": 1.0,
+    "offset": 1
+  },
+  "local_epochs": 2,
+  "batch_size": 64,
+  "optimizer": "sgd",
+  "lr": 0.01,
+  "momentum": 0.9,
+  "weight_decay": 0.0,
+  "clients_per_round": 1.0,
+  "history_every": 2,
+  "seeds": [
+    100
+  ],
+  "alphas": [
+    1.0
+  ],
+  "methods": {
+    "short_retrain": {
+      "rounds": 5
+    },
+    "grad_negation": {
+      "ascent_epochs": 5,
+      "ascent_lr": 0.002,
+      "radius": 1.0,
+      "loss_threshold_mult": 4.0,
+      "recovery_rounds": 5,
+      "check_every": 1
+    }
+  },
+  "device": "auto",
+  "results_dir": "results/raw/pilots_hyperparameter_selection",
+  "checkpoints_dir": "checkpoints_v7/pilot",
+  "logs_dir": "logs_v7/pilot",
+  "validation_holdout": 5000,
+  "eval_split": "validation",
+  "eval_every": 2
+}

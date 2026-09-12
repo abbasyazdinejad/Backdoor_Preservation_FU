@@ -1,0 +1,29 @@
+{
+  "title": "Backdoor Preservation in Federated Unlearning: Security\u2013Utility Trade-offs After Malicious-Client Identification",
+  "layout": "one notebook (notebooks/reproduce_all_results.ipynb), one results tree (results/), one manuscript source (paper/Main.tex)",
+  "version": "final clean release derived from the archival v8 repository",
+  "git_commit": "652ff901de4b06971cc9b52442984a3c5740792e",
+  "paper_pdf": "paper/Main.pdf",
+  "manuscript_source": "paper/Main.tex (single file; generated blocks synced by scripts/sync_main_tex.py)",
+  "authoritative_results": "results/processed/final_matrix/all_results.csv",
+  "resnet18_results": "results/processed/resnet18/all_results_resnet18.csv",
+  "resnet18_alignment": "results/processed/resnet18/alignment_resnet18.csv",
+  "pilot_records": "results/raw/pilots_hyperparameter_selection and results/raw/pilots_fedup_sensitivity (validation split only)",
+  "fedup_results": "results/processed/fedup/all_results_fedup.csv",
+  "fedup_alignment": "results/processed/fedup/alignment_fedup.csv",
+  "figure1_status": "placeholder pending manual replacement by the author (figures/g1.jpg)",
+  "manifest": "results/processed/final_matrix/reproduction_manifest.json",
+  "superseded_results": "results/processed/legacy_v1/all_results_v1_superseded.csv",
+  "excluded": [
+    "data/ (1.5 GB, downloadable)",
+    "checkpoints/ (31 GB) and checkpoints_v2/ (~2 GB): authoritative checkpoints and FedEraser histories, to be archived separately",
+    "checkpoints_resnet18/, checkpoints_v7/ and checkpoints_v8/ (ResNet-18, pilot and FedUP checkpoints and stored histories, to be archived separately; verify with results/manifests/checkpoints_resnet18_and_fedup.sha256)",
+    "TIFS_Latex/*.zip (historical submission package)",
+    "checkpoints_repro/ (deleted, byte-identical duplicates)",
+    "results/smoke*",
+    "per-run logs",
+    "LaTeX build products",
+    "caches"
+  ],
+  "large_artifacts": "see audit/release_plan.md; verify with results/manifests/checkpoints.sha256, results/manifests/histories.sha256 and results/manifests/checkpoints_resnet18_and_fedup.sha256"
+}

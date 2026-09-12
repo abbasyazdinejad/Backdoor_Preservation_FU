@@ -1,0 +1,156 @@
+{
+  "ASR": 0.9406006674082313,
+  "BA": 0.7832,
+  "alpha": 0.0,
+  "architecture": "resnet18",
+  "checkpoint_bytes": 44771339,
+  "checkpoint_path": "checkpoints_v7/pilot/pilot_resnet18_lr0p05/seed100/compromised.pt",
+  "checkpoint_sha256": "6915d34918e7da0c7dc00c0859116a372c9806c37cd9bf1ad8a9f20b2e62a5f8",
+  "config_path": "configs/v7/pilot_resnet18_lr0p05.json",
+  "dataset_test_sha256": "9846595abf3ad44281e81d1d2a0fd38a062941798cb163d9fa673591fa55822e",
+  "dataset_train_sha256": "38e254a0a61804896df421e02f10662483e21ef8de712ab30b7200a1e6743422",
+  "device": "mps",
+  "end_time": "2026-09-09T14:19:42-0600",
+  "environment": {
+    "cpu_brand": "Apple M4 Max",
+    "cuda_available": false,
+    "machine": "arm64",
+    "memory_gib": 64.0,
+    "mps_available": true,
+    "numpy": "2.1.3",
+    "os_version": "26.6.2",
+    "pandas": "2.2.3",
+    "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+    "processor": "arm",
+    "python": "3.13.5",
+    "timestamp": "2026-09-09T14:19:43-0600",
+    "torch": "2.9.1",
+    "torchvision": "0.24.1"
+  },
+  "eval_split": "validation",
+  "exp_id": "pilot_resnet18_lr0p05",
+  "history_bytes": 14102096483,
+  "history_path": "checkpoints_v7/pilot/pilot_resnet18_lr0p05/seed100/history.pt",
+  "history_rounds": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10,
+    12,
+    14,
+    16,
+    18,
+    20,
+    22,
+    24,
+    26,
+    28
+  ],
+  "history_sha256": "051377aa3a8f74663ad70feb11b287d38229d69aa7a1ee3df0ec3c5685246b48",
+  "method": "before",
+  "n_asr": 4495,
+  "n_eval": 5000,
+  "n_test": 5000,
+  "n_train_after_holdout": 45000,
+  "num_parameters": 11173962,
+  "parameter_groups": [
+    "stem",
+    "layer1",
+    "layer2",
+    "layer3",
+    "layer4",
+    "fc"
+  ],
+  "poisoned_counts": {
+    "0": 1125,
+    "1": 1125,
+    "2": 1125,
+    "3": 1125
+  },
+  "raw_log_path": "logs_v7/pilot/pilot_resnet18_lr0p05/seed100/compromised.log",
+  "run_id": "pilot_resnet18_lr0p05/seed100/compromised",
+  "runtime_sec": 2605.863184928894,
+  "seed": 100,
+  "start_time": "2026-09-09T13:36:16-0600",
+  "status": "completed",
+  "trajectory": [
+    {
+      "ASR": 0.058954393770856504,
+      "BA": 0.2178,
+      "round": 2
+    },
+    {
+      "ASR": 0.06273637374860956,
+      "BA": 0.4368,
+      "round": 4
+    },
+    {
+      "ASR": 0.132146829810901,
+      "BA": 0.4972,
+      "round": 6
+    },
+    {
+      "ASR": 0.27919911012235815,
+      "BA": 0.5926,
+      "round": 8
+    },
+    {
+      "ASR": 0.36774193548387096,
+      "BA": 0.6394,
+      "round": 10
+    },
+    {
+      "ASR": 0.47586206896551725,
+      "BA": 0.6772,
+      "round": 12
+    },
+    {
+      "ASR": 0.7061179087875417,
+      "BA": 0.7108,
+      "round": 14
+    },
+    {
+      "ASR": 0.7515016685205784,
+      "BA": 0.7188,
+      "round": 16
+    },
+    {
+      "ASR": 0.7684093437152392,
+      "BA": 0.7406,
+      "round": 18
+    },
+    {
+      "ASR": 0.8191323692992214,
+      "BA": 0.7586,
+      "round": 20
+    },
+    {
+      "ASR": 0.8631813125695217,
+      "BA": 0.7568,
+      "round": 22
+    },
+    {
+      "ASR": 0.8716351501668521,
+      "BA": 0.7626,
+      "round": 24
+    },
+    {
+      "ASR": 0.8918798665183537,
+      "BA": 0.7602,
+      "round": 26
+    },
+    {
+      "ASR": 0.8229143492769744,
+      "BA": 0.765,
+      "round": 28
+    },
+    {
+      "ASR": 0.9406006674082313,
+      "BA": 0.7832,
+      "round": 30
+    }
+  ],
+  "validation_holdout": 5000
+}

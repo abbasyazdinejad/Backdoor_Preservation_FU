@@ -1,0 +1,5 @@
+setting,threshold_mult,ascent_lr,radius,val_BA,val_ASR,eval_split,n_eval,sec
+fine_tuning_reference,,,,0.797,0.9510567296996663,validation,5000,
+grad_negation,1.0,0.002,1.0,0.7726,0.839154616240267,validation,5000,249.00632119178772
+grad_negation,2.0,0.002,1.0,0.7752,0.671635150166852,validation,5000,261.66712188720703
+grad_negation,4.0,0.002,1.0,0.7748,0.514349276974416,validation,5000,454.7723877429962

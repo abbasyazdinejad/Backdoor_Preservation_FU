@@ -1,0 +1,12 @@
+# Tested with Python 3.13.5 on macOS 26 (Apple M4 Max, MPS backend); CPU and CUDA also supported.
+torch>=2.2
+torchvision>=0.17
+numpy>=1.26
+pandas>=2.0
+scipy>=1.11
+matplotlib>=3.8
+pytest>=7.4
+jupyter>=1.0
+nbconvert>=7.0
+nbformat>=5.9
+ipykernel>=6.25

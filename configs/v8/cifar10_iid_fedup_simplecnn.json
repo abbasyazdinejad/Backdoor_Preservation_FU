@@ -1,0 +1,58 @@
+{
+  "exp_id": "cifar10_iid",
+  "dataset": "cifar10",
+  "rounds": 40,
+  "partition": {
+    "scheme": "iid",
+    "beta": null
+  },
+  "notes": "v8 FedUP baseline (Romandini et al., arXiv:2508.13853), implementation from the paper (audit/v8_fedup_baseline_protocol_audit.md): P = 10% from the source (IID), recovery = 5 FedAvg rounds with the protocol's local optimizer (same budget as fine-tuning); last-round local models reconstructed exactly and verified against the compromised checksum. Reads the compromised model, history and counterfactual of the v6/v7 SimpleCNN matrix (results/raw/final_matrix, checkpoints/) read-only; writes only to results_v8/, checkpoints_v8/, logs_v8/.",
+  "data_root": "data",
+  "architecture": "simplecnn",
+  "num_clients": 20,
+  "malicious_clients": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "poison_rate": 0.5,
+  "target_label": 0,
+  "trigger": {
+    "size": 4,
+    "value": 1.0,
+    "offset": 1
+  },
+  "local_epochs": 2,
+  "batch_size": 64,
+  "optimizer": "sgd",
+  "lr": 0.01,
+  "momentum": 0.9,
+  "weight_decay": 0.0,
+  "clients_per_round": 1.0,
+  "history_every": 2,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "alphas": [
+    1.0
+  ],
+  "methods": {
+    "fedup": {
+      "prune_fraction": 0.1,
+      "recovery_rounds": 5
+    }
+  },
+  "device": "auto",
+  "results_dir": "results/raw/fedup",
+  "checkpoints_dir": "checkpoints_v8",
+  "logs_dir": "logs_v8",
+  "compromised_results_dir": "results/raw/final_matrix",
+  "compromised_checkpoints_dir": "checkpoints",
+  "eval_split": "test",
+  "validation_holdout": 0
+}

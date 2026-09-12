@@ -1,0 +1,42 @@
+{
+  "ASR": 0.024,
+  "BA": 0.6656,
+  "alpha": 1.0,
+  "checkpoint_path": "checkpoints/cifar10_dirichlet/seed0/cf_sameinit_alpha1.00.pt",
+  "checkpoint_sha256": "7b5ce3450450c5e8db7bf1f01547b6fd3200a123f212afc87acff5dee6e84ba8",
+  "compromised_checkpoint_sha256": "5a9fa9c5c223df70cf81d1a3b3835eefb09a31e836bd8041cad81b6c716ff2dc",
+  "config_path": "configs/cifar10_dirichlet.json",
+  "deleted_clients": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "exp_id": "cifar10_dirichlet",
+  "init_from": "history.global_states[0]",
+  "init_sha256": "0adbc754d1241d48acc03ef584bc9e2d6f57d67279399ec95ddf5ff5b5c8120d",
+  "method": "cf_sameinit",
+  "purpose": "same-initialisation counterfactual for the alignment analysis (not part of all_results.csv)",
+  "retained_clients": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "run_id": "cifar10_dirichlet/seed0/cf_sameinit_alpha1.00",
+  "runtime_sec": 139.72809195518494,
+  "seed": 0,
+  "status": "completed"
+}

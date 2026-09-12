@@ -1,0 +1,54 @@
+{
+  "exp_id": "cifar10_iid_federaser_r1",
+  "dataset": "cifar10",
+  "rounds": 40,
+  "partition": {
+    "scheme": "iid",
+    "beta": null
+  },
+  "notes": "supplementary sensitivity: FedEraser with calibration ratio r=1.0 (E_cal = 2 local epochs), alpha=1 only; shares nothing with cifar10_iid on disk (separate exp_id) but uses identical seeds/protocol",
+  "data_root": "data",
+  "architecture": "simplecnn",
+  "num_clients": 20,
+  "malicious_clients": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "poison_rate": 0.5,
+  "target_label": 0,
+  "trigger": {
+    "size": 4,
+    "value": 1.0,
+    "offset": 1
+  },
+  "local_epochs": 2,
+  "batch_size": 64,
+  "optimizer": "sgd",
+  "lr": 0.01,
+  "momentum": 0.9,
+  "weight_decay": 0.0,
+  "clients_per_round": 1.0,
+  "history_every": 2,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "alphas": [
+    1.0
+  ],
+  "methods": {
+    "federaser": {
+      "calibration_ratio": 1.0
+    },
+    "full_retrain": {}
+  },
+  "device": "auto",
+  "results_dir": "results/raw/legacy_v1",
+  "checkpoints_dir": "checkpoints",
+  "logs_dir": "logs"
+}

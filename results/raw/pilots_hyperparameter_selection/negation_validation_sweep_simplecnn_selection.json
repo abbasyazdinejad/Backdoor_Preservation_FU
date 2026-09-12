@@ -1,0 +1,14 @@
+{
+  "config": "configs/v7/pilot_negval_cifar10_simplecnn.json",
+  "rule": "largest multiplier with val_BA >= fine-tuning val_BA - 0.01",
+  "fine_tuning_val_BA": 0.659,
+  "selected_multiplier": 4.0,
+  "candidates": [
+    1.0,
+    2.0,
+    4.0
+  ],
+  "ascent_lr": 0.002,
+  "radius": 1.0,
+  "eval_split": "validation"
+}

@@ -1,0 +1,111 @@
+{
+  "ASR": 0.942,
+  "BA": 0.7683,
+  "alpha": 0.0,
+  "architecture": "resnet18",
+  "checkpoint_bytes": 44771339,
+  "checkpoint_path": "checkpoints_resnet18/cifar10_iid_resnet18/seed3/compromised.pt",
+  "checkpoint_sha256": "e86c053aa7ec8ad10ac42e5d4d063b11cb9b6ec7b438f1fc14db041928346e6b",
+  "config_path": "configs/v7/cifar10_iid_resnet18.json",
+  "dataset_test_sha256": "2c33b053d1cd726af8d86e174a96dd89d7000ba1412add026d68142375b89d51",
+  "dataset_train_sha256": "973ef2abb5897efc795681a4d79a6f5f642fa2bcb1a828f7476017c89db53a57",
+  "device": "mps",
+  "end_time": "2026-09-09T16:21:25-0600",
+  "environment": {
+    "cpu_brand": "Apple M4 Max",
+    "cuda_available": false,
+    "machine": "arm64",
+    "memory_gib": 64.0,
+    "mps_available": true,
+    "numpy": "2.1.3",
+    "os_version": "26.6.2",
+    "pandas": "2.2.3",
+    "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+    "processor": "arm",
+    "python": "3.13.5",
+    "timestamp": "2026-09-09T16:21:25-0600",
+    "torch": "2.9.1",
+    "torchvision": "0.24.1"
+  },
+  "eval_split": "test",
+  "exp_id": "cifar10_iid_resnet18",
+  "history_bytes": 14102096483,
+  "history_path": "checkpoints_resnet18/cifar10_iid_resnet18/seed3/history.pt",
+  "history_rounds": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10,
+    12,
+    14,
+    16,
+    18,
+    20,
+    22,
+    24,
+    26,
+    28
+  ],
+  "history_sha256": "e30465f0a628f56e45426c287b83eb1ca9304f3f40e19d5f34d1d95859ddd73f",
+  "method": "before",
+  "n_asr": 9000,
+  "n_eval": 10000,
+  "n_test": 10000,
+  "n_train_after_holdout": 50000,
+  "num_parameters": 11173962,
+  "parameter_groups": [
+    "stem",
+    "layer1",
+    "layer2",
+    "layer3",
+    "layer4",
+    "fc"
+  ],
+  "poisoned_counts": {
+    "0": 1250,
+    "1": 1250,
+    "2": 1250,
+    "3": 1250
+  },
+  "raw_log_path": "logs_resnet18/cifar10_iid_resnet18/seed3/compromised.log",
+  "run_id": "cifar10_iid_resnet18/seed3/compromised",
+  "runtime_sec": 1531.1701140403748,
+  "seed": 3,
+  "start_time": "2026-09-09T15:55:54-0600",
+  "status": "completed",
+  "trajectory": [
+    {
+      "ASR": 0.043,
+      "BA": 0.3489,
+      "round": 5
+    },
+    {
+      "ASR": 0.37266666666666665,
+      "BA": 0.5767,
+      "round": 10
+    },
+    {
+      "ASR": 0.695,
+      "BA": 0.6728,
+      "round": 15
+    },
+    {
+      "ASR": 0.6221111111111111,
+      "BA": 0.6062,
+      "round": 20
+    },
+    {
+      "ASR": 0.8391111111111111,
+      "BA": 0.7514,
+      "round": 25
+    },
+    {
+      "ASR": 0.942,
+      "BA": 0.7683,
+      "round": 30
+    }
+  ],
+  "validation_holdout": 0
+}

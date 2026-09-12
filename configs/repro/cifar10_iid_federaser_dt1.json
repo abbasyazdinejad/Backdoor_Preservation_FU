@@ -1,0 +1,57 @@
+{
+  "exp_id": "cifar10_iid_federaser_dt1",
+  "dataset": "cifar10",
+  "rounds": 40,
+  "partition": {
+    "scheme": "iid",
+    "beta": null
+  },
+  "notes": "FROM-SCRATCH COPY of configs/final/cifar10_iid_federaser_dt1.json (2026-09-07): identical settings and method set (corrected FedEraser, same-initialisation counterfactual), isolated empty output directories, no compromised-record source tree. This configuration has NOT been executed in full after the FedEraser correction; only the smoke configuration exercises the same code path.",
+  "data_root": "data",
+  "architecture": "simplecnn",
+  "num_clients": 20,
+  "malicious_clients": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "poison_rate": 0.5,
+  "target_label": 0,
+  "trigger": {
+    "size": 4,
+    "value": 1.0,
+    "offset": 1
+  },
+  "local_epochs": 2,
+  "batch_size": 64,
+  "optimizer": "sgd",
+  "lr": 0.01,
+  "momentum": 0.9,
+  "weight_decay": 0.0,
+  "clients_per_round": 1.0,
+  "history_every": 1,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "alphas": [
+    1.0
+  ],
+  "methods": {
+    "federaser": {
+      "calibration_ratio": 0.5
+    },
+    "full_retrain": {},
+    "cf_sameinit": {}
+  },
+  "device": "auto",
+  "results_dir": "results/raw/from_scratch_repro",
+  "checkpoints_dir": "checkpoints_repro",
+  "logs_dir": "logs_repro",
+  "compromised_results_dir": null,
+  "compromised_checkpoints_dir": null
+}

@@ -1,0 +1,30 @@
+{
+  "exp_id": "pilot_cifar10",
+  "dataset": "cifar10",
+  "data_root": "data",
+  "rounds": 6,
+  "seeds": [
+    0
+  ],
+  "alphas": [
+    1.0
+  ],
+  "methods": {
+    "short_retrain": {
+      "rounds": 2
+    },
+    "grad_negation": {
+      "ascent_epochs": 1,
+      "ascent_lr": 0.01,
+      "radius": 5.0,
+      "recovery_rounds": 1
+    },
+    "federaser": {
+      "calibration_ratio": 0.5
+    },
+    "full_retrain": {}
+  },
+  "results_dir": "results/pilot",
+  "checkpoints_dir": "checkpoints/pilot",
+  "logs_dir": "logs/pilot"
+}

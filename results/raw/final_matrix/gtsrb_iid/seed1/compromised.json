@@ -1,0 +1,112 @@
+{
+  "ASR": 0.82824184566428,
+  "BA": 0.8353919239904988,
+  "alpha": 0.0,
+  "checkpoint_path": "checkpoints/gtsrb_iid/seed1/compromised.pt",
+  "checkpoint_sha256": "c7d75f9eb05701de6a30bdaa74f4282d4671be568e673be42d4e440d922a2b43",
+  "config_path": "configs/gtsrb_iid.json",
+  "dataset_test_sha256": "4aec6c4f97564859ac2884047f2d3ee7f2a77bad4499957c584c54b13be6e44d",
+  "dataset_train_sha256": "a139507fa5f57e4410c1c594c68238362ad7dda9a4ccc5f946288143be113adc",
+  "device": "mps",
+  "end_time": "2026-09-06T12:09:56-0600",
+  "environment": {
+    "cpu_brand": "Apple M4 Max",
+    "cuda_available": false,
+    "machine": "arm64",
+    "memory_gib": 64.0,
+    "mps_available": true,
+    "numpy": "2.1.3",
+    "os_version": "26.6.2",
+    "pandas": "2.2.3",
+    "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+    "processor": "arm",
+    "python": "3.13.5",
+    "timestamp": "2026-09-06T12:09:56-0600",
+    "torch": "2.9.1",
+    "torchvision": "0.24.1"
+  },
+  "exp_id": "gtsrb_iid",
+  "history_path": "checkpoints/gtsrb_iid/seed1/history.pt",
+  "history_rounds": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10,
+    12,
+    14,
+    16,
+    18,
+    20,
+    22,
+    24,
+    26,
+    28,
+    30,
+    32,
+    34,
+    36,
+    38
+  ],
+  "history_sha256": "338c5d1bbec1d35259a6e9ece5e3bd00816bf74c92e2e64373cdbeb8503588a4",
+  "method": "before",
+  "n_asr": 12570,
+  "n_test": 12630,
+  "num_parameters": 549355,
+  "poisoned_counts": {
+    "0": 666,
+    "1": 666,
+    "2": 666,
+    "3": 666
+  },
+  "promoted_from": "results/raw/gtsrb_iid/seed1/compromised.json",
+  "raw_log_path": "logs/gtsrb_iid/seed1/compromised.log",
+  "run_id": "gtsrb_iid/seed1/compromised",
+  "runtime_sec": 71.96959090232849,
+  "seed": 1,
+  "start_time": "2026-09-06T12:08:44-0600",
+  "status": "completed",
+  "trajectory": [
+    {
+      "ASR": 0.7391408114558472,
+      "BA": 0.1456848772763262,
+      "round": 5
+    },
+    {
+      "ASR": 0.7466189339697693,
+      "BA": 0.5453681710213777,
+      "round": 10
+    },
+    {
+      "ASR": 0.6634049323786794,
+      "BA": 0.7197149643705463,
+      "round": 15
+    },
+    {
+      "ASR": 0.7224343675417662,
+      "BA": 0.7737133808392715,
+      "round": 20
+    },
+    {
+      "ASR": 0.7411296738265712,
+      "BA": 0.7992082343626287,
+      "round": 25
+    },
+    {
+      "ASR": 0.781304693715195,
+      "BA": 0.8181314330958036,
+      "round": 30
+    },
+    {
+      "ASR": 0.7968178202068417,
+      "BA": 0.8250989707046714,
+      "round": 35
+    },
+    {
+      "ASR": 0.82824184566428,
+      "BA": 0.8353919239904988,
+      "round": 40
+    }
+  ]
+}

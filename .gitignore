@@ -1,0 +1,25 @@
+# datasets and model artifacts are not distributed with this repository
+data/
+checkpoints/
+checkpoints_v2/
+checkpoints_resnet18/
+checkpoints_v8/
+checkpoints_repro/
+
+# outputs of a from-scratch run
+results_repro/
+logs/
+logs_*/
+
+# python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.eggs/
+*.egg-info/
+
+# notebooks and tooling
+.ipynb_checkpoints/
+.pytest_cache/
+.DS_Store

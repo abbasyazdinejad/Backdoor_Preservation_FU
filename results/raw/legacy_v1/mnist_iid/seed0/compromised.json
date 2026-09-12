@@ -1,0 +1,81 @@
+{
+  "ASR": 0.9922394678492239,
+  "BA": 0.9862,
+  "alpha": 0.0,
+  "checkpoint_path": "checkpoints/mnist_iid/seed0/compromised.pt",
+  "checkpoint_sha256": "37819b091053cfd090b834a14f3e2cdfcb2614453581bbdd6ac4cbb07e932328",
+  "config_path": "configs/mnist_iid.json",
+  "dataset_test_sha256": "4f5b3b6253750c12f45aa8964b1d9055e026c382221cc9a4b7f35d6a8fec48d8",
+  "dataset_train_sha256": "204530f0bbc19ed3737560ee05bcf9d35cefaee026e51cd394e3b1601b868ba9",
+  "device": "mps",
+  "end_time": "2026-09-06T11:14:10-0600",
+  "environment": {
+    "cpu_brand": "Apple M4 Max",
+    "cuda_available": false,
+    "machine": "arm64",
+    "memory_gib": 64.0,
+    "mps_available": true,
+    "numpy": "2.1.3",
+    "os_version": "26.6.2",
+    "pandas": "2.2.3",
+    "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+    "processor": "arm",
+    "python": "3.13.5",
+    "timestamp": "2026-09-06T11:14:10-0600",
+    "torch": "2.9.1",
+    "torchvision": "0.24.1"
+  },
+  "exp_id": "mnist_iid",
+  "history_path": "checkpoints/mnist_iid/seed0/history.pt",
+  "history_rounds": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10,
+    12,
+    14,
+    16,
+    18
+  ],
+  "history_sha256": "320a48016d0ec8edfa0abd7f3f2f71f01f4a5cb1b46d36c7a6e777b911ee2ddd",
+  "method": "before",
+  "n_asr": 9020,
+  "n_test": 10000,
+  "num_parameters": 544522,
+  "poisoned_counts": {
+    "0": 1500,
+    "1": 1500,
+    "2": 1500,
+    "3": 1500
+  },
+  "raw_log_path": "logs/mnist_iid/seed0/compromised.log",
+  "run_id": "mnist_iid/seed0/compromised",
+  "runtime_sec": 73.52419972419739,
+  "seed": 0,
+  "start_time": "2026-09-06T11:12:57-0600",
+  "status": "completed",
+  "trajectory": [
+    {
+      "ASR": 0.738580931263858,
+      "BA": 0.9601,
+      "round": 5
+    },
+    {
+      "ASR": 0.9620842572062084,
+      "BA": 0.9777,
+      "round": 10
+    },
+    {
+      "ASR": 0.9864745011086474,
+      "BA": 0.9826,
+      "round": 15
+    },
+    {
+      "ASR": 0.9922394678492239,
+      "BA": 0.9862,
+      "round": 20
+    }
+  ]
+}

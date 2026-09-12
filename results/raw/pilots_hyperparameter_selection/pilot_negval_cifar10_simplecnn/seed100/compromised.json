@@ -1,0 +1,154 @@
+{
+  "ASR": 0.8718576195773081,
+  "BA": 0.6406,
+  "alpha": 0.0,
+  "architecture": "simplecnn",
+  "checkpoint_bytes": 2183813,
+  "checkpoint_path": "checkpoints_v7/pilot/pilot_negval_cifar10_simplecnn/seed100/compromised.pt",
+  "checkpoint_sha256": "978f6a386c2914b114acaba52d9a1ab348363d7c67535b2ddecc22245a402853",
+  "config_path": "configs/v7/pilot_negval_cifar10_simplecnn.json",
+  "dataset_test_sha256": "9846595abf3ad44281e81d1d2a0fd38a062941798cb163d9fa673591fa55822e",
+  "dataset_train_sha256": "38e254a0a61804896df421e02f10662483e21ef8de712ab30b7200a1e6743422",
+  "device": "mps",
+  "end_time": "2026-09-09T13:40:50-0600",
+  "environment": {
+    "cpu_brand": "Apple M4 Max",
+    "cuda_available": false,
+    "machine": "arm64",
+    "memory_gib": 64.0,
+    "mps_available": true,
+    "numpy": "2.1.3",
+    "os_version": "26.6.2",
+    "pandas": "2.2.3",
+    "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+    "processor": "arm",
+    "python": "3.13.5",
+    "timestamp": "2026-09-09T13:40:50-0600",
+    "torch": "2.9.1",
+    "torchvision": "0.24.1"
+  },
+  "eval_split": "validation",
+  "exp_id": "pilot_negval_cifar10_simplecnn",
+  "history_bytes": 687505727,
+  "history_path": "checkpoints_v7/pilot/pilot_negval_cifar10_simplecnn/seed100/history.pt",
+  "history_rounds": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10,
+    12,
+    14,
+    16,
+    18,
+    20,
+    22,
+    24,
+    26,
+    28
+  ],
+  "history_sha256": "73c7f46a8c6191136196551b462c04730426c88f96ac03e2e042c9a345efe66c",
+  "method": "before",
+  "n_asr": 4495,
+  "n_eval": 5000,
+  "n_test": 5000,
+  "n_train_after_holdout": 45000,
+  "num_parameters": 545098,
+  "parameter_groups": [
+    "conv1",
+    "conv2",
+    "fc1",
+    "fc2"
+  ],
+  "poisoned_counts": {
+    "0": 1125,
+    "1": 1125,
+    "2": 1125,
+    "3": 1125
+  },
+  "raw_log_path": "logs_v7/pilot/pilot_negval_cifar10_simplecnn/seed100/compromised.log",
+  "run_id": "pilot_negval_cifar10_simplecnn/seed100/compromised",
+  "runtime_sec": 277.75450587272644,
+  "seed": 100,
+  "start_time": "2026-09-09T13:36:13-0600",
+  "status": "completed",
+  "trajectory": [
+    {
+      "ASR": 0.6491657397107897,
+      "BA": 0.2006,
+      "round": 2
+    },
+    {
+      "ASR": 0.4080088987764182,
+      "BA": 0.3344,
+      "round": 4
+    },
+    {
+      "ASR": 0.3946607341490545,
+      "BA": 0.4128,
+      "round": 6
+    },
+    {
+      "ASR": 0.514349276974416,
+      "BA": 0.4618,
+      "round": 8
+    },
+    {
+      "ASR": 0.6605116796440489,
+      "BA": 0.497,
+      "round": 10
+    },
+    {
+      "ASR": 0.689210233592881,
+      "BA": 0.5142,
+      "round": 12
+    },
+    {
+      "ASR": 0.7675194660734149,
+      "BA": 0.5352,
+      "round": 14
+    },
+    {
+      "ASR": 0.8097886540600667,
+      "BA": 0.5614,
+      "round": 16
+    },
+    {
+      "ASR": 0.8157953281423804,
+      "BA": 0.5734,
+      "round": 18
+    },
+    {
+      "ASR": 0.8327030033370412,
+      "BA": 0.5872,
+      "round": 20
+    },
+    {
+      "ASR": 0.8507230255839822,
+      "BA": 0.6024,
+      "round": 22
+    },
+    {
+      "ASR": 0.8687430478309233,
+      "BA": 0.6126,
+      "round": 24
+    },
+    {
+      "ASR": 0.8598442714126807,
+      "BA": 0.6262,
+      "round": 26
+    },
+    {
+      "ASR": 0.8587319243604005,
+      "BA": 0.6326,
+      "round": 28
+    },
+    {
+      "ASR": 0.8718576195773081,
+      "BA": 0.6406,
+      "round": 30
+    }
+  ],
+  "validation_holdout": 5000
+}

@@ -1,0 +1,82 @@
+{
+  "ASR": 0.9970066518847006,
+  "BA": 0.9858,
+  "alpha": 0.0,
+  "checkpoint_path": "checkpoints/mnist_iid/seed2/compromised.pt",
+  "checkpoint_sha256": "0ef9f58621a10e0be07c0d84696be419862ef60edb241b1074ea27f82ea300e2",
+  "config_path": "configs/mnist_iid.json",
+  "dataset_test_sha256": "4f5b3b6253750c12f45aa8964b1d9055e026c382221cc9a4b7f35d6a8fec48d8",
+  "dataset_train_sha256": "204530f0bbc19ed3737560ee05bcf9d35cefaee026e51cd394e3b1601b868ba9",
+  "device": "mps",
+  "end_time": "2026-09-06T11:33:40-0600",
+  "environment": {
+    "cpu_brand": "Apple M4 Max",
+    "cuda_available": false,
+    "machine": "arm64",
+    "memory_gib": 64.0,
+    "mps_available": true,
+    "numpy": "2.1.3",
+    "os_version": "26.6.2",
+    "pandas": "2.2.3",
+    "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+    "processor": "arm",
+    "python": "3.13.5",
+    "timestamp": "2026-09-06T11:33:40-0600",
+    "torch": "2.9.1",
+    "torchvision": "0.24.1"
+  },
+  "exp_id": "mnist_iid",
+  "history_path": "checkpoints/mnist_iid/seed2/history.pt",
+  "history_rounds": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10,
+    12,
+    14,
+    16,
+    18
+  ],
+  "history_sha256": "3c38b6613d3932b34f04da03db45d65ef264ea2dec6799d5534f2007faf86e4a",
+  "method": "before",
+  "n_asr": 9020,
+  "n_test": 10000,
+  "num_parameters": 544522,
+  "poisoned_counts": {
+    "0": 1500,
+    "1": 1500,
+    "2": 1500,
+    "3": 1500
+  },
+  "promoted_from": "results/raw/mnist_iid/seed2/compromised.json",
+  "raw_log_path": "logs/mnist_iid/seed2/compromised.log",
+  "run_id": "mnist_iid/seed2/compromised",
+  "runtime_sec": 76.24547481536865,
+  "seed": 2,
+  "start_time": "2026-09-06T11:32:24-0600",
+  "status": "completed",
+  "trajectory": [
+    {
+      "ASR": 0.6926829268292682,
+      "BA": 0.9608,
+      "round": 5
+    },
+    {
+      "ASR": 0.9752771618625277,
+      "BA": 0.9774,
+      "round": 10
+    },
+    {
+      "ASR": 0.9925720620842572,
+      "BA": 0.9829,
+      "round": 15
+    },
+    {
+      "ASR": 0.9970066518847006,
+      "BA": 0.9858,
+      "round": 20
+    }
+  ]
+}
