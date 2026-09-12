@@ -70,17 +70,6 @@ ablations, the baselines, a verification map and a summary.
 Four plots are regenerated and displayed inline: the attack-success and accuracy comparison across datasets, attack
 success against the removed fraction, the per-seed security-utility scatter, and the update-direction analysis.
 
-## Modes
-
-Set `MODE` in the notebook's first code cell.
-
-| Mode | What it does | What it needs |
-|---|---|---|
-| `VERIFY_EXISTING` (default) | rebuilds the aggregated records from the raw runs, then recomputes and displays every result | this repository, nothing else |
-| `RECOMPUTE_FROM_CHECKPOINTS` | additionally recomputes the six parameter-space measurement files from stored model weights | the checkpoint archive and the datasets |
-| `FULL_FROM_SCRATCH` | retrains the whole matrix into isolated directories | the datasets, an accelerator, hours of compute |
-
-Requesting a mode without its artifacts fails immediately and names what is missing. Nothing ever falls back silently.
 
 ## Command line
 
@@ -115,33 +104,6 @@ protocol, and documents every adaptation made to the FedUP reimplementation.
 artifacts, the cross-platform value-store comparison, and the full notebook in `VERIFY_EXISTING`. It downloads no
 dataset and trains nothing, and it uploads the executed notebook as a build artifact.
 
-## Not included
-
-| Artifact | Size | Why | How to get it |
-|---|---|---|---|
-| model checkpoints and stored update histories | about 100 GB | too large to distribute | unpack at the repository root as `checkpoints/`, `checkpoints_v2/`, `checkpoints_resnet18/`, `checkpoints_v8/`; checksum lists are in `results/manifests/` |
-| datasets | about 1 GB | redistributable only from their sources | `python3 download_datasets.py data` |
-
-Without the checkpoints, six parameter-space measurement files cannot be recomputed from model weights. They ship
-here, the notebook verifies their recorded hash, schema, row count and provenance and displays their contents, and
-everything derived from them is regenerated. The notebook states this rather than implying full recomputation.
-
-This repository carries the implementation and the experimental evidence. It does not carry the write-up, and none of
-the results depend on it.
-
-## A note on the two remaining LaTeX-looking files
-
-This repository carries no write-up: no manuscript source, no bibliography, no compiled document. Two things may still
-catch your eye.
-
-* `results/processed/from_scratch_repro/tables/` holds seven small auto-generated table exports produced by the
-  from-scratch reproduction run. They are part of the hashed evidence set that
-  `scripts/v8/check_v7_integrity.py` verifies, so they stay. They are run outputs, not document sources.
-* `results/manifests/path_map.json` and `RELEASE_MANIFEST.json` are provenance metadata that record where every
-  evidence file came from, including paths that existed in the original working repository. The notebook reads
-  `path_map.json` for one recorded checksum.
-
-Neither is needed to read or run anything, and neither is a document source.
 
 ## Environment
 
